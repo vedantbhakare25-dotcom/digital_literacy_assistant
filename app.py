@@ -12,12 +12,11 @@ from utils.gemini_analysis import (
 )
 from utils.file_processor import process_uploaded_file
 from data.quiz_examples import QUIZ_EXAMPLES, COMPARISON_EXAMPLES
-
 # Load environment variables
 load_dotenv()
 
-# Configure Gemini API
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+# Configure Gemini API - Sahi Syntax ye hai:
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Page configuration
 st.set_page_config(
