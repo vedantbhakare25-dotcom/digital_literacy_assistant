@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 from dotenv import load_dotenv
-from google import genai
+import google.generativeai as genai
 import random
 from utils.gemini_analysis import (
     analyze_text, 
