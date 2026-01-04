@@ -95,9 +95,8 @@ Be thorough and accurate. If the text seems safe, reflect that in low scores. Do
     
     try:
         # Call Gemini API
-        model = genai.GenerativeModel('gemini-2.0-flash-exp')
-        response = model.generate_content(prompt)
-        
+model = genai.GenerativeModel('gemini-1.5-flash') # Ya 'gemini-pro'
+response = model.generate_content(prompt)
         # Extract and parse the JSON response
         response_text = response.text.strip()
         
